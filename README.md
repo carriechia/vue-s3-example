@@ -54,4 +54,4 @@
 			"Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/*"
 		}
 	]
-}```
+} ```
