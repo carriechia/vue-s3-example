@@ -1,3 +1,7 @@
+### 建立AWS S3參考文件
+[aws s3](https://docs.aws.amazon.com/zh_tw/AmazonS3/latest/user-guide/static-website-hosting.html)
+
+
 # Deploy Vue.js to AWS S3
 
 ## 建立 vue project
