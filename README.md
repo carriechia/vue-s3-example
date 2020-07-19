@@ -38,3 +38,20 @@
 ```
 1. `npm run build`
 2. `npm run deploy` (直接deploy到s3)
+
+### Access Denied and S3 Bucket Policies
+
+在 bucket 的 permissions 加入 bucket policy
+
+```{
+   "Version": "2012-10-17",
+     "Statement": [
+        {
+			"Sid": "PublicReadAccess",
+			"Effect": "Allow",
+			"Principal": "*",
+			"Action": "s3:GetObject",
+			"Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/*"
+		}
+	]
+}```
