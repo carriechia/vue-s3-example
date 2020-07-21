@@ -31,13 +31,13 @@
 ### 在vue專案執行
 1. `npm run build`
 2. `serve ./dist`
-3. `aws s3 sync ./dist s3://**your bucket name**`
+3. `aws s3 sync ./dist s3:// **your bucket name**`
 
 
 ### 也可以修改package.json
 ```
 "scripts": {
-   "deploy": "aws s3 sync ./dist s3://**your bucket name**`
+   "deploy": "aws s3 sync ./dist s3:// **your bucket name**`
   },
 ```
 1. `npm run build`
@@ -47,7 +47,8 @@
 
 在 bucket 的 permissions 加入 bucket policy
 
-```{
+```
+{
    "Version": "2012-10-17",
      "Statement": [
         {
@@ -58,4 +59,5 @@
 			"Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/*"
 		}
 	]
-} ```
+}
+```
